@@ -14,7 +14,7 @@ setup(
     description="A personalized fashion recommendation system for H&M competition",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/your-username/hm-recommendation-system",
+    url="https://github.com/kakiyeah/hm-recommendation-system",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
