@@ -2,7 +2,7 @@
 
 ## 项目概述
 
-这是一个基于Kaggle H&M个性化时尚推荐竞赛的推荐系统项目。该项目使用多种推荐策略和机器学习模型来预测用户可能购买的时尚商品。
+基于Kaggle H&M个性化时尚推荐竞赛的推荐系统项目。
 
 ## 项目特点
 
@@ -63,17 +63,10 @@ hm-recommendation-system/
 ### 1. 环境准备
 
 ```bash
-# 克隆项目
-git clone https://github.com/your-username/hm-recommendation-system.git
-cd hm-recommendation-system
 
-# 创建虚拟环境
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# 或
-venv\Scripts\activate     # Windows
+source venv/bin/activate  
 
-# 安装依赖
 pip install -r requirements.txt
 ```
 
@@ -136,16 +129,4 @@ python src/models/training.py
 4. **高效的候选生成**: 通过多种策略平衡推荐准确性和覆盖率
 5. **可扩展的架构**: 模块化设计便于扩展和维护
 
-## 贡献指南
 
-欢迎提交Issue和Pull Request来改进这个项目！
-
-## 许可证
-
-MIT License
-
-## 联系方式
-
-如有问题，请通过以下方式联系：
-- Email: your-email@example.com
-- GitHub: https://github.com/kakiyeah
