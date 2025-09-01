@@ -1,0 +1,32 @@
+# 数据处理
+pandas>=1.3.0
+numpy>=1.21.0
+vaex>=4.13.0
+
+# 机器学习
+catboost>=1.0.0
+lightgbm>=3.3.0
+scikit-learn>=1.0.0
+
+# 推荐系统
+lightfm>=1.17.0
+
+# 数据可视化
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# 工具库
+tqdm>=4.62.0
+logzero>=1.7.0
+pyyaml>=6.0
+
+# 科学计算
+scipy>=1.7.0
+faiss-cpu>=1.7.0
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# 测试
+pytest>=6.0.0

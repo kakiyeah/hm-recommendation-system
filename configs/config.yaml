@@ -1,0 +1,51 @@
+# 数据配置
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  lfm_dir: "data/lfm"
+  user_features_dir: "data/user_features"
+
+# 模型配置
+model:
+  type: "CatBoost"  # CatBoost 或 LightGBM
+  popular_num_items: 60
+  popular_weeks: 1
+  train_weeks: 6
+  item2item_num_items: 12
+
+# 特征配置
+features:
+  user_transaction_feature_weeks: 50
+  item_transaction_feature_weeks: 16
+  item_age_feature_weeks: 40
+  user_volume_feature_weeks: 50
+  item_volume_feature_weeks: 20
+  user_item_volume_feature_weeks: 16
+
+# LightFM配置
+lightfm:
+  learning_schedule: "adadelta"
+  loss: "bpr"
+  learning_rate: 0.005
+  random_state: 42
+  epochs: 100
+  embedding_dim: 16
+
+# CatBoost配置
+catboost:
+  loss_function: "YetiRank"
+  use_best_model: true
+  one_hot_max_size: 300
+  iterations: 10000
+
+# LightGBM配置
+lightgbm:
+  objective: "xendcg"
+  boosting_type: "gbdt"
+  learning_rate: 1e-6
+  num_leaves: 255
+  min_data_in_leaf: 100
+  metric: "map"
+  eval_at: 12
+  num_boost_round: 1000
+  early_stopping_rounds: 20
