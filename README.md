@@ -58,7 +58,7 @@ hm-recommendation-system/
     └── __init__.py
 ```
 
-## 快速开始
+## START
 
 ### 1. 环境准备
 
