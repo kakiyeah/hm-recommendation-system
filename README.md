@@ -19,45 +19,6 @@
 - **特征工程**: 标签编码、One-hot编码、聚合特征
 - **评估指标**: MAP@12 (Mean Average Precision at 12)
 
-## 项目结构
-
-```
-hm-recommendation-system/
-├── README.md                 # 项目说明文档
-├── requirements.txt          # 依赖包列表
-├── setup.py                 # 项目安装配置
-├── data/                    # 数据目录
-│   ├── raw/                 # 原始数据
-│   └── processed/           # 处理后的数据
-├── src/                     # 源代码
-│   ├── __init__.py
-│   ├── data/               # 数据处理模块
-│   │   ├── __init__.py
-│   │   └── preprocessing.py
-│   ├── features/           # 特征工程模块
-│   │   ├── __init__.py
-│   │   ├── lfm_features.py
-│   │   └── user_features.py
-│   ├── models/             # 模型模块
-│   │   ├── __init__.py
-│   │   ├── candidate_generation.py
-│   │   ├── feature_engineering.py
-│   │   └── training.py
-│   └── utils/              # 工具函数
-│       ├── __init__.py
-│       └── metrics.py
-├── notebooks/              # Jupyter notebooks
-│   ├── 01_data_preprocessing.ipynb
-│   ├── 02_feature_engineering.ipynb
-│   └── 03_model_training.ipynb
-├── configs/                # 配置文件
-│   └── config.yaml
-├── models/                 # 训练好的模型
-├── results/                # 结果文件
-└── tests/                  # 测试文件
-    └── __init__.py
-```
-
 ## START
 
 ### 1. 环境准备
